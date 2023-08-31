@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/css/reset.css">
+  <link rel="stylesheet" href="../static/css/graphStyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+
+    <div class="burgerAndLogoBox">
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li><a class="menu__item" href="index.html">Головна</a></li>
+          <li><a class="menu__item" href="graph.html">Трейдинг</a></li>
+          <li><a class="menu__item" href="share.html">Акції</a></li>
+          <li><a class="menu__item" href="education.html">Навчання</a></li>
+          <li><a class="menu__item" href="office.html">Особистий кабінет</a></li>
+        </ul>
+      </div>
+      <span class="logo">5SolKo</span>
+    </div>
+
+    <div class="langAndLogBox">
+      <div class="lang">
+        <select name="lang" id="lang">
+          <option value="uk">English</option>
+          <option value="ua" selected>Українська</option>
+        </select>
+      </div>
+      <span class="log">Login</span>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="mycol col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div id="technical-analysis"></div>
+          <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/symbols/AAPL/" rel="noopener"
+              target="_blank"><span class="blue-text"></span></a></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+          <script type="text/javascript">
+            new TradingView.widget({
+              "container_id": "technical-analysis",
+              "autosize": true,
+              "symbol": "AAPL",
+              "interval": "D",
+              "timezone": "exchange",
+              "theme": "light",
+              "style": "1",
+              "toolbar_bg": "#f1f3f6",
+              "withdateranges": true,
+              "hide_side_toolbar": false,
+              "allow_symbol_change": true,
+              "save_image": false,
+              "studies": [
+                "ROC@tv-basicstudies",
+                "StochasticRSI@tv-basicstudies",
+                "MASimple@tv-basicstudies"
+              ],
+              "show_popup_button": true,
+              "popup_width": "1000",
+              "popup_height": "650",
+              "locale": "ru"
+            });
+          </script>
+        </div>
+      </div>
+      <div class="mycol col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+        <div class="buttonSect">
+          <button class="buttonBuy" id="button-sell" onclick="buyShare()">
+            <img class="imageBuy" src = "../image/payment-method.png">
+            <h2>BUY</h2>
+          </button>
+          <input type="text" id="input-buy" name="fname">
+          <button class="buttonSell" id="button-sell" onclick="sellShare()">
+            <img class="imageSell" src = "../image/selling.png">
+          </button>
+          <input type="text" id="input-sell" name="fname">
+          <h3 id = "price-share">$$$$$$$$$$$$$$</h3>
+          <h3 id = "your-money">$$$$$$$$$$$$$$</h3>
+          <h3 id = "display-count">$$$$$$$$$$$$$$</h3>
+          <h4 id= "justTest"></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TradingView Widget END -->
+
+  <!--Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script src="../static/js/graph.js"></script>
+</body>
+
+</html>

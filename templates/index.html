@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <header>
+        <div class="burgerAndLogoBox">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="index.html">Головна</a></li>
+                    <li><a class="menu__item" href="graph.html">Трейдинг</a></li>
+                    <li><a class="menu__item" href="share.html">Акції</a></li>
+                    <li><a class="menu__item" href="education.html">Навчання</a></li>
+                    <li><a class="menu__item" href="office.html">Особистий кабінет</a></li>
+                </ul>
+            </div>
+            <span class="logo">5SolKo</span>
+        </div>
+    
+        <div class="langAndLogBox">
+            <div class="lang">
+                <select name="lang" id="lang">
+                    <option value="uk">English</option>
+                    <option value="ua" selected>Українська</option>
+                </select>
+            </div>
+            <span class="log">Login</span>
+        </div>
+    </header>
+
+    
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="leftBar col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <img class="leftBarVid" src="../image/main-page/videoImg.png">
+                    <br>
+                    <img class="leftBarVid" src="../image/main-page/videoImg.png">
+                    <br>
+                    <img class="leftBarVid" src="../image/main-page/videoImg.png">
+                    <br>
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingBartradingview-widget-copyright"><a
+                                href="https://ru.tradingview.com/symbols/EURUSD/?exchange=FX" rel="noopener"
+                                target="_blank"><span class="blue-text"></span></a></div>
+                        <script type="text/javascript"
+                            src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                            async>
+                            {
+                                "symbol";
+                                "FX:EURUSD",
+                                "width";
+                                "100%",
+                                "height";
+                                "100%",
+                                "locale";
+                                "ru",
+                                "dateRange";
+                                "12M",
+                                "colorTheme";
+                                "light",
+                                "trendLineColor";
+                                "#37a6ef",
+                                "underLineColor";
+                                "#E3F2FD",
+                                "isTransparent";
+                                false,
+                                "autosize";
+                                true,
+                                "largeChartUrl";
+                                ""
+                            }
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingBartradingview-widget-copyright"><a
+                                href="https://ru.tradingview.com/symbols/EURUSD/?exchange=FX" rel="noopener"
+                                target="_blank"><span class="blue-text"></span></a></div>
+                        <script type="text/javascript"
+                            src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                            async>
+                            {
+                                "symbol";
+                                "FX:EURUSD",
+                                "width";
+                                "100%",
+                                "height";
+                                "100%",
+                                "locale";
+                                "ru",
+                                "dateRange";
+                                "12M",
+                                "colorTheme";
+                                "light",
+                                "trendLineColor";
+                                "#37a6ef",
+                                "underLineColor";
+                                "#E3F2FD",
+                                "isTransparent";
+                                false,
+                                "autosize";
+                                true,
+                                "largeChartUrl";
+                                ""
+                            }
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                </div>
+                <div class="middlebar col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                    <div class="newsBack">
+                        <div class="newsBlockText">
+                            <p>It is a long established fact that a </p>
+                            <p>reader will be distracted by the readable </p>
+                            <p>content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+                    <div class="hotNews">
+                        <div class="blockHot">
+                            <div class="imgHot imgHot1"></div>
+                            <div class="blockHotText">
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout.</p>
+                            </div>
+                        </div>
+                        <div class="blockHot">
+                            <div class="imgHot imgHot2"></div>
+                            <div class="blockHotText">
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout.</p>
+                            </div>
+                        </div>
+                        <div class="blockHot">
+                            <div class="imgHot imgHot3"></div>
+                            <div class="blockHotText">
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/markets/"
+                                rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+                        <script type="text/javascript"
+                            src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                            {
+                                "colorTheme";
+                                "light",
+                                "dateRange";
+                                "12M",
+                                "showChart";
+                                true,
+                                "locale";
+                                "ru",
+                                "width";
+                                "100%",
+                                "height";
+                                "100%",
+                                "largeChartUrl";
+                                "",
+                                "isTransparent";
+                                false,
+                                "showSymbolLogo";
+                                true,
+                                "plotLineColorGrowing";
+                                "rgba(33, 150, 243, 1)",
+                                "plotLineColorFalling";
+                                "rgba(33, 150, 243, 1)",
+                                "gridLineColor";
+                                "rgba(240, 243, 250, 1)",
+                                "scaleFontColor";
+                                "rgba(120, 123, 134, 1)",
+                                "belowLineFillColorGrowing";
+                                "rgba(33, 150, 243, 0.12)",
+                                "belowLineFillColorFalling";
+                                "rgba(33, 150, 243, 0.12)",
+                                "symbolActiveColor";
+                                "rgba(33, 150, 243, 0.12)",
+                                "tabs";
+                                [{
+                                        "title": "Индексы",
+                                        "symbols": [{
+                                                "s": "FOREXCOM:SPXUSD",
+                                                "d": "S&P 500"
+                                            },
+                                            {
+                                                "s": "FOREXCOM:NSXUSD",
+                                                "d": "Nasdaq 100"
+                                            },
+                                            {
+                                                "s": "FOREXCOM:DJI",
+                                                "d": "Dow 30"
+                                            },
+                                            {
+                                                "s": "INDEX:NKY",
+                                                "d": "Nikkei 225"
+                                            },
+                                            {
+                                                "s": "INDEX:DEU30",
+                                                "d": "DAX Index"
+                                            },
+                                            {
+                                                "s": "FOREXCOM:UKXGBP",
+                                                "d": "FTSE 100"
+                                            }
+                                        ],
+                                        "originalTitle": "Indices"
+                                    },
+                                    {
+                                        "title": "Фьючерсы",
+                                        "symbols": [{
+                                                "s": "CME_MINI:ES1!",
+                                                "d": "S&P 500"
+                                            },
+                                            {
+                                                "s": "CME:6E1!",
+                                                "d": "Euro"
+                                            },
+                                            {
+                                                "s": "COMEX:GC1!",
+                                                "d": "Gold"
+                                            },
+                                            {
+                                                "s": "NYMEX:CL1!",
+                                                "d": "Crude Oil"
+                                            },
+                                            {
+                                                "s": "NYMEX:NG1!",
+                                                "d": "Natural Gas"
+                                            },
+                                            {
+                                                "s": "CBOT:ZC1!",
+                                                "d": "Corn"
+                                            }
+                                        ],
+                                        "originalTitle": "Commodities"
+                                    },
+                                    {
+                                        "title": "Облигации",
+                                        "symbols": [{
+                                                "s": "CME:GE1!",
+                                                "d": "Eurodollar"
+                                            },
+                                            {
+                                                "s": "CBOT:ZB1!",
+                                                "d": "T-Bond"
+                                            },
+                                            {
+                                                "s": "CBOT:UB1!",
+                                                "d": "Ultra T-Bond"
+                                            },
+                                            {
+                                                "s": "EUREX:FGBL1!",
+                                                "d": "Euro Bund"
+                                            },
+                                            {
+                                                "s": "EUREX:FBTP1!",
+                                                "d": "Euro BTP"
+                                            },
+                                            {
+                                                "s": "EUREX:FGBM1!",
+                                                "d": "Euro BOBL"
+                                            }
+                                        ],
+                                        "originalTitle": "Bonds"
+                                    },
+                                    {
+                                        "title": "Форекс",
+                                        "symbols": [{
+                                                "s": "FX:EURUSD"
+                                            },
+                                            {
+                                                "s": "FX:GBPUSD"
+                                            },
+                                            {
+                                                "s": "FX:USDJPY"
+                                            },
+                                            {
+                                                "s": "FX:USDCHF"
+                                            },
+                                            {
+                                                "s": "FX:AUDUSD"
+                                            },
+                                            {
+                                                "s": "FX:USDCAD"
+                                            }
+                                        ],
+                                        "originalTitle": "Forex"
+                                    }
+                                ]
+                            }
+                        </script>
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <div class="tradingview-widget-copyright"><a
+                                    href="https://ru.tradingview.com/markets/currencies/economic-calendar/"
+                                    rel="noopener" target="_blank"><span class="blue-text">Экономический
+                                        календарь</span></a> от TradingView</div>
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+                                {
+                                    "colorTheme";
+                                    "light",
+                                    "isTransparent";
+                                    false,
+                                    "width";
+                                    "100%",
+                                    "height";
+                                    "100%",
+                                    "locale";
+                                    "ru",
+                                    "importanceFilter";
+                                    "-1,0,1"
+                                }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+                    <!-- TradingView Widget END -->
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div class="block-divide"></div>
+
+    <div class="start-easy">
+        <div class="start-easy__title">
+            <h2>Почати легко</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <h1>1</h1>
+                    <img class="start-easy__circle" src="../image/main-page/start-circle.png">
+                    <img class="start-easy__line" src="../image/main-page/line.png">
+                    <h3>Зареєструйтесь</h3>
+                    <p>Введіть свій e-mail, щоб створити акаунт.Це безкоштовно</p>
+                </div>
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <h1>2</h1>
+                    <img class="start-easy__circle" src="../image/main-page/start-circle.png">
+                    <h3>Познайомтесь з платформою</h3>
+                    <p>Дізнайтесь, як працюють інвестиції,не ризикуючи власними грошима.</p>
+                </div>
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <h1>3</h1>
+                    <img class="start-easy__circle" src="../image/main-page/start-circle.png">
+                    <h3>Інвестуйте і отримуйте прибуток</h3>
+                    <p>Виберіть актив і змусьте гроші працювати на вас</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-divide"></div>
+
+    <div class="investment">
+        <div class="investment__title">
+            <h2>Інвестуйте в найпопулярніші активи</h2>
+            <p>Від добре знайомих компаній до гарячих стартапів - тут завжди є із чого вибрати. </p>
+            <div class="investment__share">
+                <img src="../image/main-page/share-1.png">
+                <img src="../image/main-page/share-2.png">
+                <img src="../image/main-page/share-3.png">
+                <img src="../image/main-page/share-4.png">
+                <img src="../image/main-page/share-5.png">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="block-divide"></div>
+
+    <div class="why-we">
+        <div class="container">
+            <div class="row">
+                <div class="why-we__block col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <img src="../image/main-page/img-1.png">
+                    <p>Мінімальна вартість угоди доволі низька. Поки навчаєтеся трейдингу, ви не втратите великої суми
+                        коштів.</p>
+                </div>
+                <div class="why-we__block col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <img src="../image/main-page/img-2.png">
+                    <p>Торгуйте,коли завгодно: платформа працює 24/7.</p>
+                </div>
+                <div class="why-we__block col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <img src="../image/main-page/img-3.png">
+                    <p>З нами ви можете почуватися в безпеці та розраховувати на цілодобову підтримку та допомогу.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer__info-block col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                    <p>5Solko — член категорії "А" міжнародної Фінансової Комісії,
+                        що гарантує клієнтам компанії якість послуг, прозорість взаємовідносин,
+                        захист нейтральної і незалежної організації з врегулювання суперечок.
+                    </p>
+                    <br>
+                    <p>Номер телефону: +18499366003</p>
+
+                    <div class="footer__social-container">
+                        <img src="../image/main-page/soc-y.png">
+                        <img src="../image/main-page/soc-f.png">
+                        <img src="../image/main-page/soc-i.png">
+                        <img src="../image/main-page/soc-t.png">
+                    </div>
+                </div>
+                <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+                <div class="footer__info-block col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    <p>Контакти</p>
+                    <br>
+                    <p>support@5solko.com
+                        Dolphin Corp
+                        First Floor, First St. Vincent Bank Ltd Building, James Street, Kingstown, St.Vincent and
+                        the
+                        Grenadines</p>
+                    <br>
+                    <p>Pollack Trade LTD (компанія, що зареєстрована відповідно до законодавства Республіки
+                        Болгарія,
+                        реєстраційний
+                        номер 205942015, юридична адреса: Georgi Sava Rakovski St. 96, Sredets Region, Sofia
+                        Municipality, Sofia 1000)
+                        є платіжним агентом компанії Dolphin Corp і входить до групи компаній 5SolKo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
